@@ -1,10 +1,9 @@
 import "./Titulo.css";
-const Titulo = (props) => {
-  let { saludo } = props;
+const Titulo = () => {
   return (
     <div>
-      <h1 className="titulo">CompumundoHyperMegaRed</h1>
-      <p className="bodypar">{saludo}</p>
+      <h1 className="titulo">Bienvenidos a SpaceGuitar</h1>
+      <p className="bodypar"></p>
     </div>
   );
 };

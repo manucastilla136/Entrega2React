@@ -1,18 +1,20 @@
 import "./App.css";
-import { Body } from "./components/Body/Body";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavBar } from "./components/NavBar/NavBar/NavBar";
-import { Tienda } from "./components/Tienda/Tienda";
-import Titulo from "./components/Titulo/Titulo";
+import TiendaContainer from "./components/Tienda/TiendaContainer";
+
 function App() {
-  let saludo =
-    "CompuMundoHyperMegaRed Homero Simpson vicepresidente Jr. para servirle, ¿en qué podemos servirle?";
   return (
-    <div className="App">
-      <NavBar />
-      <Titulo saludo={saludo} />
-      <Body />
-      <Tienda />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<NavBar />}>
+          <Route path="/" element={<TiendaContainer />} />
+          <Route path="/category/:name" element={<TiendaContainer />} />
+          <Route path="/ItemDetail/:id" element={<ItemDetail />} />
+          <Route path="*" element={<h2>La pagina no existe</h2>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
