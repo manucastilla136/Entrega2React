@@ -4,7 +4,7 @@ export const productos = [
     title: "Gibson Les Paul Custom",
     price: 1200,
     description: "Guitarra Les Paul de caoba con diapason de palo rosa",
-    category: "gibson",
+    category: "Gibson",
     stock: 14,
     img: "https://res.cloudinary.com/duyqlazxs/image/upload/v1682444693/LPC68PSL12596_FINISHES_FAMILY_202_dztvxo.jpg",
   },
@@ -14,7 +14,7 @@ export const productos = [
     price: 1000,
     description:
       "Guitarra sg de caoba, con acabado brillante y diapason de laurel indio",
-    category: "gibson",
+    category: "Gibson",
     stock: 6,
     img: "https://res.cloudinary.com/duyqlazxs/image/upload/v1682444738/D_NQ_NP_705649-MLA44531666271_012021-O_p1gyel.jpg",
   },
