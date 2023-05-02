@@ -9,7 +9,7 @@ function App() {
       <Routes>
         <Route element={<NavBar />}>
           <Route path="/" element={<TiendaContainer />} />
-          <Route path="/category/:name" element={<TiendaContainer />} />
+          <Route path="/category/:categoryName" element={<TiendaContainer />} />
           <Route path="/ItemDetail/:id" element={<ItemDetail />} />
           <Route path="*" element={<h2>La pagina no existe</h2>} />
         </Route>
